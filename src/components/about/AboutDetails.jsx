@@ -9,7 +9,7 @@ import replit from './../../../public/background/replit.png';
 import uipath from './../../../public/background/uipath.png';
 import blender from './../../../public/background/blender.jpg';
 import Epic from './../../../public/background/epic_games.png';
-import Gemini from './../../../public/background/gemini.png';
+import Gemini from './../../../public/background/Gemini.png';
 
 const AboutDetails = () => {
     return (
