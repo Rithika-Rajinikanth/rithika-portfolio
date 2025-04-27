@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const NavButton = ({ label, link, icon: Icon, newTab }) => {
   const [hovered, setHovered] = useState(false);
 
