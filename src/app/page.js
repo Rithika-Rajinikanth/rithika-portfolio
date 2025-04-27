@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from 'next/link';
 import Navigation from "@/components/navigation";
 import ProjectList from "@/components/projects";
 import { projectsData } from "./projectsData";
