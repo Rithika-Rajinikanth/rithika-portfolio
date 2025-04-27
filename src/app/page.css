@@ -1,0 +1,49 @@
+.neon-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 
+        0 0 10px #ff00ff,  /* Pink Glow */
+        0 0 20px #ff00ff,  
+        0 0 40px #5500ff,  /* Purple Glow */
+        0 0 80px #0000ff;  /* Blue Outer Glow */
+    animation: neon-glow 1.5s infinite alternate, colorShift 2s infinite alternate;
+}
+
+/* Glowing Effect */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 
+            0 0 5px #ff00ff, 
+            0 0 10px #5500ff;
+    }
+    50% {
+        text-shadow: 
+            0 0 20px #ff00ff, 
+            0 0 40px #5500ff, 
+            0 0 80px #0000ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #ff00ff, 
+            0 0 10px #5500ff;
+    }
+}
+
+/* Color Shifting Effect */
+@keyframes colorShift {
+    0% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+    50% { color: #00ffff; text-shadow: 0 0 20px #00ffff; }
+    100% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+}
+
+/* Additional Effect: Hue Rotation */
+.neon-text {
+    filter: hue-rotate(0deg);
+    animation: hueRotate 5s infinite linear;
+}
+
+@keyframes hueRotate {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
