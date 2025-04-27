@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Volume2, VolumeX } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import Link from 'next/link';
 
 const Modal = ({ onClose, toggle }) => {
   return createPortal(
